@@ -1,0 +1,33 @@
+.headerTasks {
+    display: flex;
+    justify-content: space-between;
+}
+
+.infoTasks {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.infoTasks p {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.4;
+}
+
+.subtitleTasks {
+    color: var(--gray-200);
+    border-radius: 999px;
+    padding: 0.125rem 0.5rem;
+    background: var(--gray-400);
+    width: max-content;
+}
+
+.blue {
+    color: var(--blue);
+}
+
+.purple {
+    color: var(--purple);
+}

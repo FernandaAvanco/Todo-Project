@@ -1,0 +1,28 @@
+main {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.registerTask {
+    max-width: 46rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 0.5rem;
+    margin-top: -1.5%;
+}
+
+.containerTasks {
+    margin-top: 4.375rem;
+    max-width: 46rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tasks {
+    margin-top: 1.5rem;
+    border-radius: 8px;
+    border-top: 1px solid var(--gray-400);
+}

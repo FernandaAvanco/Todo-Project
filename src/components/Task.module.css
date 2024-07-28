@@ -1,0 +1,66 @@
+.task {
+    background: var(--gray-500);
+    border-radius: 8px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+    border: 1px solid var(--gray-400);
+}
+
+.task + .task {
+    margin-top: .75rem;
+}
+
+.task input {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    margin: 0;
+}
+
+.task input:not(:checked) {
+    background-color: transparent;
+    border: 2px solid var(--blue);
+}
+
+.task input:not(:checked):hover {
+    background-color: var(--blue-dark);
+}
+
+.task input:checked {
+    background-color: var(--purple-dark);
+    border: none;
+}
+
+.task input:checked:hover {
+    background-color: var(--purple);
+}
+
+.task input:checked::after {
+    content: "";
+    position: absolute;
+    left: 8px;
+    top: 4px;
+    width: 3px;
+    height: 8px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.task input:checked::after {
+    transform: rotate(40deg);
+}
+
+.task p {
+    color: var(--gray-100);
+    flex: 1;
+    margin: 0
+}
